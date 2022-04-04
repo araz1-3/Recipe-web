@@ -1,0 +1,113 @@
+*{
+  transition: all 0.3s linear;
+}
+.App{
+  min-height: 100vh;
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.guide{
+  background-color: #d21616;
+  color: white;
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.guide:hover{
+  background-color: #a00e0e;
+}
+.search-form{
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50%;
+}
+.search-bar{
+  width: 100%;
+  border: none;
+  padding: 10px;
+}
+.search-bar:focus{
+  outline: none;
+}
+.search-button{
+  background-color: #d21616;
+  border: none;
+  padding:10px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.search-button:hover{
+  background-color: #a00e0e;
+}
+.recipes{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.recipe{
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgb(71,71,71);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  align-items: center;
+  width: 40%;
+}
+.recipe h1{
+  padding: 5px 10px;
+}
+.recipe ol{
+  align-self: flex-start;
+  line-height: 30px;
+}
+.recipe img{
+  margin-top: 5px;
+  border-radius: 30px;
+}
+.recipe p span{
+  font-weight: bolder;
+}
+.green{
+  color: green;
+  margin: 5px;
+}
+.red{
+  color: red;
+  margin: 5px;
+}
+.loading{
+  color: white;
+}
+@media screen and (max-width: 900px){
+  .recipe h1{
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 850px){
+  .recipes{
+    flex-direction: column;
+  }
+  .recipe{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 415px){
+  .navbar{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 360px){
+  .recipe img{
+    width: 70%;
+  }
+}

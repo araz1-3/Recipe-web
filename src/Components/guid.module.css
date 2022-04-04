@@ -1,0 +1,152 @@
+*{
+    scrollbar-width:thin;
+    scrollbar-color:rgba(155,155,155,0.5) transparent;
+}
+*::-webkit-scrollbar{
+    width: 5px;
+}
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+*::-webkit-scrollbar-thumb{
+    background-color:rgba(155,155,155,0.5) ;
+    border-radius: 20px;
+    border: transparent;
+}
+
+.container{
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+ }
+.title h1{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.Xmark{
+    cursor: pointer;
+    padding: 10px 30px 30px 70px;
+    margin-left: 120px;
+    font-size: 3rem;
+}
+.all_guides{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: scroll;
+    width: 80%;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+.guides{
+    margin-top: 30%;
+}
+@media screen and (max-width: 1300px) {
+    .guides{
+        margin-top: 35%;
+    }
+    .title h1 {
+        font-size: 2.5rem;
+    }
+}
+@media (max-height: 1368px) and (max-width: 912px){
+    .guides{
+        margin-top: 0;
+    }
+    .title h1 {
+        font-size: 2rem;
+    }
+}
+@media (min-width:819px ) and (min-height:819px) {
+    .guides{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 930px){
+    .title h1 {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 913px){
+    .guides{
+        margin-top: 40%;
+    }
+}
+@media screen and (max-width: 840px){
+    .title h1 {
+        font-size: 1.7rem;
+    }
+    .guides p{
+        font-size: 16px;
+    }
+}
+@media screen  and (max-width: 800px){
+    .all_guides{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 640px){
+    .title h1 {
+        font-size: 1.5rem;
+        padding-left: 30px;
+    }
+    .guides p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 565px){
+    .all_guides{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding-left: 30px;
+    }
+    .guides{
+        margin-top: 0;
+    }
+    .title h1 {
+        font-size: 16px;
+    }
+    .Xmark{
+        font-size: 1.4rem;
+        margin-left: 450px;
+    }
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+}
+@media screen and (max-width: 500px){
+    .Xmark{
+        margin-left: 300px;
+    }
+
+}
+@media screen and (max-width: 375px){
+    .Xmark{
+        margin-left: 220px;
+        font-size: 1rem;
+    }
+    .title h1 {
+        font-size: 14px;
+        padding-left: 0;
+    }
+}
+
